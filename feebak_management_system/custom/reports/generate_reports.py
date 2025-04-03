@@ -1,0 +1,8 @@
+from feebak_management_system.custom.reports.feebak_subscription_data_report import create_feebak_purchase_report
+from feebak_management_system.custom.reports.mrr_of_financial_year import create_monthly_mrr_financial_year_report
+from feebak_management_system.custom.reports.mrr_report_of_month import create_subscription_mrr_query_report
+
+def generate_all_reports():
+    create_feebak_purchase_report()
+    create_monthly_mrr_financial_year_report()
+    create_subscription_mrr_query_report()
