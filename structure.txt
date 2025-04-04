@@ -1,0 +1,52 @@
+.
+├── README.md
+├── feebak_management_system
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-312.pyc
+│   │   └── hooks.cpython-312.pyc
+│   ├── config
+│   │   └── __init__.py
+│   ├── custom
+│   │   ├── doctypes
+│   │   │   └── feebak_subscription_doctype
+│   │   │       ├── __pycache__
+│   │   │       │   ├── create_doctype.cpython-312.pyc
+│   │   │       │   ├── permission_to_doctype.cpython-312.pyc
+│   │   │       │   └── remaining_permission.cpython-312.pyc
+│   │   │       ├── create_doctype.py
+│   │   │       ├── permission_to_doctype.py
+│   │   │       └── remaining_permission.py
+│   │   └── reports
+│   │       ├── __pycache__
+│   │       │   ├── feebak_subscription_data_report.cpython-312.pyc
+│   │       │   ├── generate_reports.cpython-312.pyc
+│   │       │   ├── mrr_of_financial_year.cpython-312.pyc
+│   │       │   └── mrr_report_of_month.cpython-312.pyc
+│   │       ├── feebak_subscription_data_report.py
+│   │       ├── generate_reports.py
+│   │       ├── mrr_of_financial_year.py
+│   │       └── mrr_report_of_month.py
+│   ├── feebak_management_system
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       └── __init__.cpython-312.pyc
+│   ├── hooks.py
+│   ├── modules.txt
+│   ├── patches.txt
+│   ├── public
+│   │   ├── css
+│   │   └── js
+│   ├── templates
+│   │   ├── __init__.py
+│   │   ├── includes
+│   │   └── pages
+│   │       └── __init__.py
+│   └── www
+├── install.py
+├── license.txt
+├── pyproject.toml
+├── setup.py
+└── structure.txt
+
+19 directories, 31 files

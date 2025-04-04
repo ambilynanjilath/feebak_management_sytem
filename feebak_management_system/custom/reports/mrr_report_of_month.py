@@ -56,7 +56,7 @@ def create_subscription_mrr_query_report():
             WHERE n <= DAY(LAST_DAY(CONCAT(%(year)s, '-', %(month)s, '-01')))
         ),
         active_subs AS (
-            SELECT dr.report_date, fs.name AS subscription_name, fs.subscription_id
+            SELECT dr.report_date, fs.name AS subscription_name, fs.subscription_id_3rd_party
             FROM date_range dr
             JOIN `tabFeebak Subscription Data` fs 
             ON fs.subscription_start_date <= dr.report_date 

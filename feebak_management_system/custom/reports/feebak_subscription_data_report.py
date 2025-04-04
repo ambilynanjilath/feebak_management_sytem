@@ -63,16 +63,16 @@ def create_feebak_purchase_report():
                 fs.customer AS "Customer:Link/Customer:200",
                 fs.status AS "Status:Data:150",
                 fs.billing_term AS "Billing Term:Data:150",
-                fs.subscription_idscraped_data AS "Subscription ID(Scraped Data):Data:200",
-                fi.part_name AS "Items(Part Name):Data:200",
-                fi.part_number AS "Items(Part Number):Data:200",
-                fi.quantity AS "Items(Quantity):Data:100",
-                fi.selling_price AS "Items(Selling Price):Currency:100",
-                fs.organization_id AS "Organization ID:Data:150"
+                fs.subscription_id_3rd_party AS "Subscription ID (3rd Party Reference):Data:200",
+                fi.part_name AS "Product Details(Part Name):Data:200",
+                fi.part_number AS "Product Details(Part Number):Data:200",
+                fi.quantity AS "Product Details(Quantity):Data:100",
+                fi.selling_price AS "Product Details(Selling Price):Currency:100",
+                fs.organisation_id AS "Organisation ID:Data:150"
             FROM
-                `tabFeebak Subscription` fs
+                `tabFeebak Subscription Data` fs
             LEFT JOIN
-                `tabFeebak Items` fi ON fi.parent = fs.name
+                `tabFeebak Subscription Items` fi ON fi.parent = fs.name
             WHERE
                 fs.docstatus < 2
                 AND (%(Status)s = '' OR fs.status = %(Status)s)  # Filter for Status (optional)
