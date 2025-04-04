@@ -5,7 +5,7 @@ app_description = "An app to manage and explore feebak data"
 app_email = "ambily@fantacode.com"
 app_license = "mit"
 
-
+required_apps = ["erpnext"]
 
 
 after_install = [
