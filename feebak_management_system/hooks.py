@@ -9,6 +9,9 @@ required_apps = ["erpnext"]
 
 
 after_install = [
+    "feebak_management_system.custom.doctypes.feebak_customer_doctype.create_customer_doctype.setup_feebak_customer_doctype",
+    "feebak_management_system.custom.doctypes.feebak_customer_doctype.permission_to_customer_doctype.make_doctype_submittable",
+    "feebak_management_system.custom.doctypes.feebak_customer_doctype.remaining_permission_customer.ensure_permission_and_enable_import",
     "feebak_management_system.custom.doctypes.feebak_subscription_doctype.create_doctype.create_feebak_subscription_doctypes",
     "feebak_management_system.custom.doctypes.feebak_subscription_doctype.permission_to_doctype.make_doctype_submittable",
     "feebak_management_system.custom.doctypes.feebak_subscription_doctype.remaining_permission.ensure_permission_and_enable_import",
