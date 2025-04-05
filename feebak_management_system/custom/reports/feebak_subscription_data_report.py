@@ -60,7 +60,7 @@ def create_feebak_purchase_report():
                 fs.name AS "Subscription ID:Link/Feebak Subscription Data:200",
                 fs.subscription_start_date AS "Subscription Start Date:Date:200",
                 fs.subscription_end_date AS "Subscription End Date:Date:200",
-                fs.customer AS "Customer:Link/Customer:200",
+                fs.customer_name AS "Customer:Link/Customer:200",
                 fs.status AS "Status:Data:150",
                 fs.billing_term AS "Billing Term:Data:150",
                 fs.subscription_id_3rd_party AS "Subscription ID (3rd Party Reference):Data:200",

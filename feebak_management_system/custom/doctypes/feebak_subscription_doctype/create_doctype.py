@@ -44,7 +44,7 @@ def create_feebak_subscription_doctypes():
                 {"label": "Subscription ID", "fieldname": "naming_series", "fieldtype": "Select", "options": "FCS.######", "reqd": 1},
                 {"label": "Subscription Start Date", "fieldname": "subscription_start_date", "fieldtype": "Date", "reqd": 1},
                 {"label": "Subscription End Date", "fieldname": "subscription_end_date", "fieldtype": "Date", "reqd": 1},
-                {"label": "Customer", "fieldname": "customer", "fieldtype": "Link", "options": "Customer"},
+                {"label": "Customer Name", "fieldname": "customer_name", "fieldtype": "Link", "options": "Feebak Customer"},
                 {"label": "Organisation Id", "fieldname": "organisation_id", "fieldtype": "Data"},
                 {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "\nActive\nInactive\nAmended\nCancelled", "reqd": 1},
                 {"label": "Billing Term", "fieldname": "billing_term", "fieldtype": "Select", "options": "\nAnnual M2M\nM2M\nAnnual Pre-Pay", "reqd": 1},
